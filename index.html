@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IMAX: La Revolución del Cine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="controles-header">
+        <select id="selector-idioma" onchange="cambiarIdioma(this.value)">
+            <option value="es">🇪🇸 Español</option>
+            <option value="en">🇬🇧 English</option>
+        </select>
+        <button id="boton-tema" onclick="alternarTema()" aria-label="Cambiar modo oscuro/claro">
+            🌙 <span class="texto-modo" data-es="Modo Oscuro" data-en="Dark Mode">Modo Oscuro</span>
+        </button>
+    </div>
+    <div id="contenedor-principal" class="articulo">
+        <div class="cabecera-noticia">
+            <h1 data-es="IMAX:La revolución del Cine" data-en="IMAX:The cinema revolution">IMAX:La revolución del Cine
+            </h1>
+            <p data-es="Cómo la tecnología de gran formato transformó nuestra forma de vivir el séptimo
+                arte." data-en="How large-format technology transformed the way we experience the seventh art.">Cómo la
+                tecnología de gran formato transformó nuestra forma de vivir el séptimo
+                arte.</p>
+            <h2 data-es="1.¿Qué es la tecnología IMAX?" data-en="1.What is IMAX technology?">1.¿Qué es la tecnología
+                IMAX?</h2>
+            <img src="IMAX.avif" width="800px" height="450px">
+            <p data-es="IMAX (abreviatura de Image Maximum) es un sistema de proyección cinematográfica
+                creado en Canadá que se distingue por el uso de películas con un tamaño de fotograma mucho mayor que el
+                formato tradicional de 35 mm. Esto permite proyectar imágenes de una nitidez y un brillo
+                extraordinarios.
+
+                Las salas de cine equipadas con esta tecnología están diseñadas específicamente para maximizar el campo
+                de visión del espectador, haciéndole sentir que forma parte de la propia acción de la película."
+                data-en="IMAX (short for Image Maximum) is a cinema projection system 
+                created in Canada that is distinguished by the use of films with a much larger frame size than the
+                traditional 35mm format. This allows for the projection of images with extraordinary sharpness and brightness.
+                Theatrical theaters equipped with this technology are specifically designed to maximize the viewer's field of vision,
+                making them feel like they are part of the action of the film itself.">IMAX (abreviatura de Image
+                Maximum) es un sistema de proyección cinematográfica
+                creado en Canadá que se distingue por el uso de películas con un tamaño de fotograma mucho mayor que el
+                formato tradicional de 35 mm. Esto permite proyectar imágenes de una nitidez y un brillo
+                extraordinarios.
+
+                Las salas de cine equipadas con esta tecnología están diseñadas específicamente para maximizar el campo
+                de visión del espectador, haciéndole sentir que forma parte de la propia acción de la película.</p>
+        </div>
+        <h3 data-es="2. La experiencia inmersiva y el sonido" data-en="2. The immersive experience and sound">2. La
+            experiencia inmersiva del sonido</h3>
+        <img src="IMAX 2.avif" width="350px" height="200px">
+        <p data-es="Más allá de la pantalla gigante, el verdadero secreto de IMAX reside en su sistema de
+            sonido envolvente de alta precisión. Cada altavoz está calibrado mediante láser para que el audio se mueva
+            con absoluta exactitud alrededor de la sala, logrando una sincronización perfecta con lo que ocurre
+            visualmente.
+
+            Esta combinación de estímulos visuales y acústicos reduce las distracciones del entorno y genera una
+            experiencia totalmente envolvente que ningún televisor doméstico puede replicar."
+
+            data-en="Beyond the giant screen, the true secret of IMAX lies in its high-precision surround sound system.
+            Each speaker is laser-calibrated so that the audio moves with absolute accuracy around the room, achieving perfect synchronization with what is happening visually.
+            This combination of visual and auditory stimuli reduces distractions from the surroundings and creates a fully immersive experience that no home television can replicate">Más allá de la
+            pantalla gigante, el verdadero secreto de IMAX reside en su sistema de
+            sonido envolvente de alta precisión. Cada altavoz está calibrado mediante láser para que el audio se mueva
+            con absoluta exactitud alrededor de la sala, logrando una sincronización perfecta con lo que ocurre
+            visualmente.
+
+            Esta combinación de estímulos visuales y acústicos reduce las distracciones del entorno y genera una
+            experiencia totalmente envolvente que ningún televisor doméstico puede replicar.</p>
+        <div id="contenedor-tercero" class="articulo">
+            <div class="cabecera-noticia">
+                <h4 data-es="3. El impacto en las superproducciones modernas" data-en="3. The impact on modern blockbusters">3. El impacto en las superproducciones modernas</h4>
+                <img src="IMAX 3.avif" width="350px" height="200px">
+                <img src="IMAX 4.avif" width="350px" height="200px">
+                <img src="IMAX 5.avif" width="350px" height="200px">
+                <p data-es="Hoy en día, los directores más prestigiosos de la industria exigen rodar secuencias enteras con
+                    cámaras con certificación IMAX para estrenar en estos formatos premium. Las películas de acción,
+                    ciencia ficción y los grandes documentales encuentran en este sistema su mejor escaparate."data-en="Today, the most prestigious directors in the industry demand that entire sequences be shot with IMAX-certified cameras to release their films in these premium formats. Action films, science fiction, and major documentaries find their best showcase in this system.">
+                Hoy en día, los directores más prestigiosos de la industria exigen rodar secuencias enteras con
+                    cámaras con certificación IMAX para estrenar en estos formatos premium. Las películas de acción,
+                    ciencia ficción y los grandes documentales encuentran en este sistema su mejor escaparate.</p>
+                <p data-es="Además, la experiencia IMAX ha influido en la narrativa cinematográfica, incentivando a los cineastas
+                    a pensar en cómo sus historias se verán y se sentirán en un entorno de gran formato." data-en="Furthermore, the IMAX experience has influenced cinematic storytelling, encouraging filmmakers
+
+to think about how their stories will look and feel in a large-format environment.">Además, la experiencia IMAX ha influido en la narrativa cinematográfica, incentivando a los cineastas
+                    a pensar en cómo sus historias se verán y se sentirán en un entorno de gran formato.</p>
+
+            <div class="fuentes-seccion">
+    <!-- Título traducible -->
+    <h3 data-es="Fuentes y referencias" data-en="Sources and references">
+        Fuentes y referencias
+    </h3>
+    
+    <br>
+    
+    <!-- Primer enlace traducible -->
+    <a href="https://www.imax.com/" target="_blank" 
+       data-es="Sitio web oficial de IMAX" 
+       data-en="Official IMAX Website">
+       Sitio web oficial de IMAX
+    </a>
+    
+    <br>
+    
+    <!-- Segundo enlace traducible -->
+    <a href="https://es.wikipedia.org/wiki/IMAX" target="_blank" 
+       data-es="Artículo informativo sobre IMAX en Wikipedia" 
+       data-en="IMAX informational article on Wikipedia">
+       Artículo informativo sobre IMAX en Wikipedia
+    </a>
+</div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
